@@ -1,3 +1,4 @@
+import 'package:flex_color_scheme/flex_color_scheme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_world/controller.dart';
 import 'package:get/get.dart';
@@ -73,18 +74,15 @@ class IndexView extends StatelessWidget{
           children: [
             FloatingActionButton(
               onPressed: controller.showLanguage,
-              backgroundColor: Colors.blueAccent,
-              child: const Icon(Icons.language, color: Colors.white),
+              child: const Icon(Icons.language),
             ),
             const SizedBox(height: 16),
             FloatingActionButton(
               onPressed: () {
-                Get.changeTheme(Get.isDarkMode ? ThemeData.light() : ThemeData.dark());
+                Get.changeTheme(Get.isDarkMode ? FlexColorScheme.light(scheme: FlexScheme.blueM3).toTheme : FlexColorScheme.dark(scheme: FlexScheme.blueM3).toTheme);
               },
-              backgroundColor: Get.isDarkMode ? Colors.white : Colors.black,
               child: Icon(
                 Get.isDarkMode ? Icons.light_mode : Icons.dark_mode,
-                color: Get.isDarkMode ? Colors.black : Colors.white,
               ),
             ),
           ],

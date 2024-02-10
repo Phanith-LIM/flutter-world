@@ -1,3 +1,4 @@
+import 'package:flex_color_scheme/flex_color_scheme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_world/index.dart';
 import 'package:flutter_world/local_string.dart';
@@ -11,14 +12,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      title: 'Flutter Translate',
+      title: 'Flutter Theme',
       translations: LocalString(),
       locale: const Locale('kh', 'CM'),
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
+      theme: FlexColorScheme.light(scheme: FlexScheme.blueM3).toTheme,
+      darkTheme: FlexColorScheme.dark(scheme: FlexScheme.blueM3).toTheme,
       home: IndexView(),
     );
   }

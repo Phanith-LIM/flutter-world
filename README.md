@@ -8,12 +8,14 @@ dependencies:
     sdk: flutter
   get: ^4.6.6
   google_fonts: ^6.1.0
+  flex_color_scheme: ^7.3.1
 ```
 ## Dependencies
 - [GetX](https://pub.dev/packages/get)
 - [Google Fonts](https://pub.dev/packages/google_fonts)
+- [Flex Color Scheme](https://pub.dev/packages/flex_color_scheme)
 
 ## Screenshots
-|                English                |            Select Language            |                 Khmer                 |
-|:-------------------------------------:|:-------------------------------------:|:-------------------------------------:|
-| ![image info](assets/I10n/image1.png) | ![image info](assets/I10n/image2.png) | ![image info](assets/I10n/image3.png) |
+|                       Light                       |                       Dark                       |  
+|:-------------------------------------------------:|:------------------------------------------------:|
+| ![image info](assets/flex_color_scheme/light.png) | ![image info](assets/flex_color_scheme/dark.png) |

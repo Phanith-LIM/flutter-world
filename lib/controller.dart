@@ -9,7 +9,7 @@ class IndexController extends GetxController {
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(8.0),
         ),
-        backgroundColor: Get.isDarkMode ? Colors.grey[900] : Colors.white,
+
         children: [
           SimpleDialogOption(
             onPressed: () {
